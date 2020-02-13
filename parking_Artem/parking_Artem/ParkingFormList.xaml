@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="parking_Artem.ParkingFormList">
+    <StackLayout>
+        <ListView x:Name="parkingList" ItemsSource="{Binding}" ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Форма заполнения парковки" Clicked="CreateParking1" BackgroundColor="#3775B2" BorderColor="White" BorderWidth="1" CornerRadius="10" Margin="12" TextColor="White"/>
+    </StackLayout>
+</ContentPage>

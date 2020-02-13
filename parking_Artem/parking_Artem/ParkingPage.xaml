@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="parking_Artem.ParkingPage">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Имя" />
+            <Entry Text="{Binding Name}" />
+            <Label Text="Государственный номер автомобиля" />
+            <Entry Text="{Binding Number}" />
+            <Label Text="Город" />
+            <Picker x:Name="picker" Title="Выберите город" SelectedIndex="{Binding City}" SelectedIndexChanged="Picker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Tallinn</x:String>
+                    <x:String>Tartu</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Парковка" />
+            <Picker x:Name="picker2" IsEnabled="False" Title="Выберите парковку" SelectedIndex="{Binding Park}">
+                <Picker.Items>
+                    <x:String>Sõpruse</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker x:Name="picker3" IsEnabled="False" IsVisible="False" Title="Выберите парковку" SelectedIndex="{Binding Park}">
+                <Picker.Items>
+                    <x:String>Kalda</x:String>
+                    <x:String>Õhtu</x:String>
+                    <x:String>Kuninga</x:String>
+                </Picker.Items>
+            </Picker>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Сохранить" Clicked="SaveParking" />
+                <Button Text="Удалить" Clicked="DeleteParking" />
+                <Button Text="Отмена" Clicked="Cancel" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
