@@ -8,9 +8,9 @@ C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\ne
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\parking_Artem.csproj.CoreCompileInputs.cache
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\parking_Artem.AssemblyInfoInputs.cache
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\parking_Artem.AssemblyInfo.cs
-C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\parking_Artem.dll
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\ref\parking_Artem.dll
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\parking_Artem.pdb
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\parking_Artem.csprojAssemblyReference.cache
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\ParkingFormList.xaml.g.cs
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem\obj\Debug\netstandard2.0\XamlC.stamp

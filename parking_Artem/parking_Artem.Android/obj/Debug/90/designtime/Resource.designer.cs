@@ -6390,16 +6390,10 @@ namespace parking_Artem.Droid
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
 			// aapt resource value: 0x7F010002
-			public const int park = 2130771970;
+			public const int park4 = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int park2 = 2130771971;
-			
-			// aapt resource value: 0x7F010004
-			public const int park4 = 2130771972;
-			
-			// aapt resource value: 0x7F010005
-			public const int parkinglogo = 2130771973;
+			public const int parkinglogo = 2130771971;
 			
 			// aapt resource value: 0x7F09006F
 			public const int tooltip_frame_dark = 2131296367;

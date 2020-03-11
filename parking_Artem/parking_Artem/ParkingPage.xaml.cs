@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,22 @@ namespace parking_Artem
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ParkingPage : ContentPage
     {
+        DateTime _triggerTime;
+        int limit = 6;
         public ParkingPage()
         {
             InitializeComponent();
+            Device.StartTimer(TimeSpan.FromSeconds(1), OnTimerTick);
+            nubmr.TextChanged += (sender, args) =>
+            {
+                string _text = nubmr.Text;
+                if (_text.Length > limit)
+                {
+                    _text = _text.Remove(_text.Length - 1);
+                    nubmr.Text = _text; 
+                }
+            };
+
 
 
 
@@ -22,7 +36,44 @@ namespace parking_Artem
             //DP.MaximumDate = DateTime.Now;
 
         }
+        bool OnTimerTick()
+        {
+            if (_switch.IsToggled && DateTime.Now >= _triggerTime)
+            {
+                _switch.IsToggled = false;
+                DisplayAlert("Время парковки", "Время вашей парквоки вышло'" , "OK");
+                var parking = (Parking)BindingContext;
+                App.Database.DeleteItem(parking.Id);
+                this.Navigation.PopAsync();
+            }
+            return true;
+        }
 
+        void OnTimePickerPropertyChanged(object sender, PropertyChangedEventArgs args)
+        {
+            if (args.PropertyName == "Time")
+            {
+                _switch.IsToggled = true;
+                SetTriggerTime();
+            }
+        }
+
+        void OnSwitchToggled(object sender, ToggledEventArgs args)
+        {
+            SetTriggerTime();
+        }
+
+        void SetTriggerTime()
+        {
+            if (_switch.IsToggled)
+            {
+                _triggerTime = DateTime.Today + _timePicker.Time;
+                if (_triggerTime < DateTime.Now)
+                {
+                    _triggerTime += TimeSpan.FromDays(1);
+                }
+            }
+        }
 
 
         private void SaveParking(object sender, EventArgs e)
@@ -32,7 +83,7 @@ namespace parking_Artem
 
             if (!String.IsNullOrEmpty(parking.Name))
             {
-                App.Database.SaveItem(parking);
+                App.Database.SaveItem(parking); 
             }
             this.Navigation.PopAsync();
 
@@ -67,6 +118,10 @@ namespace parking_Artem
             {
                 picker2.IsEnabled = false;
             }
+
+
         }
+
+
     }
 }

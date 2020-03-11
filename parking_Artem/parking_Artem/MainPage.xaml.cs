@@ -14,6 +14,7 @@ namespace parking_Artem
         public MainPage()
         {
             InitializeComponent();
+            
         }
 
         protected override void OnAppearing()

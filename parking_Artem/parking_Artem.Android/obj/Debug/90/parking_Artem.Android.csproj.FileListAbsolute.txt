@@ -554,3 +554,13 @@ C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\res\drawable\parkinglogo.png
 C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\res\drawable\park4.jpg
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\bin\Debug\Plugin.Messaging.Abstractions.pdb
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\bin\Debug\Plugin.Messaging.dll.mdb
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\linksrc\Plugin.Messaging.Abstractions.dll
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\linksrc\Plugin.Messaging.dll
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\linksrc\Plugin.Messaging.Abstractions.pdb
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\linksrc\Plugin.Messaging.dll.mdb
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\android\assets\Plugin.Messaging.Abstractions.dll
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\android\assets\Plugin.Messaging.Abstractions.pdb
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\android\assets\Plugin.Messaging.dll
+C:\Users\opilane\projects\parking_Artem\parking_Artem\parking_Artem.Android\obj\Debug\90\android\assets\Plugin.Messaging.dll.mdb

@@ -29,6 +29,7 @@ namespace parking_Artem
             ParkingPage parkingPage = new ParkingPage();
             parkingPage.BindingContext = selectedParking;
             await Navigation.PushAsync(parkingPage);
+            
 
         }
 

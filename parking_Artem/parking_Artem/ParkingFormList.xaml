@@ -11,8 +11,10 @@
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" HeightRequest="400">
+                                <Label Text="{Binding Number}" HorizontalTextAlignment="Center"
+                                       FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>

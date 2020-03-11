@@ -10,7 +10,7 @@
             <Label Text="Имя" />
             <Entry Text="{Binding Name}" />
             <Label Text="Государственный номер автомобиля" />
-            <Entry Text="{Binding Number}" />
+            <Entry x:Name="nubmr" Text="{Binding Number}"/>
             <Label Text="Город" />
             <Picker x:Name="picker" Title="Выберите город" SelectedIndex="{Binding City}" SelectedIndexChanged="Picker_SelectedIndexChanged">
                 <Picker.Items>
@@ -31,6 +31,12 @@
                     <x:String>Kuninga</x:String>
                 </Picker.Items>
             </Picker>
+            <Label Text="Время парковки"/>
+            <TimePicker x:Name="_timePicker" Time="{Binding Time}"
+                    PropertyChanged="OnTimePickerPropertyChanged" />
+            <Switch x:Name="_switch" IsToggled="False"
+                    HorizontalOptions="EndAndExpand"
+                    Toggled="OnSwitchToggled" IsVisible="False" />
             <StackLayout Orientation="Horizontal">
                 <Button Text="Сохранить" Clicked="SaveParking" />
                 <Button Text="Удалить" Clicked="DeleteParking" />
